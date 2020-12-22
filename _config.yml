@@ -2,7 +2,7 @@
 title: PHOTORAMA
 email: ""
 description: "Photo Journal"
-url: "https://github.com/tonygi"
+url: "https://tonygi.github.io/tecniartsite/"
 baseurl: "/photorama"
 facebook_username: ""
 twitter_username: ""
@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://github.com/tonygi/photorama/gallery/"  
-  - JOURNAL: "https://github.com/tonygi/photorama/journal/"
-  - ABOUT: "https://github.com/tonygi/photorama/about/"
+  - GALLERY: "https://tonygi.github.io/tecniartsite/gallery/"  
+  - JOURNAL: "https://tonygi.github.io/tecniartsite/journal/"
+  - ABOUT: "https://tonygi.github.io/tecniartsite/about/"
 
 # All translation keys
 translations:

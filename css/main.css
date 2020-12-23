@@ -20,7 +20,12 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
+/* bootstrap override open*/
+.navbar-toggle {
+  margin-bottom: 0px !important;
+}
 
+/* bootstrap override close*/
 .navbar-custom .nav li a {
     text-decoration: none;
     font-size: 1em !important;

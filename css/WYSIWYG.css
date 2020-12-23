@@ -41,12 +41,12 @@ ul, ol { padding: 0; line-height: 1.6; list-style: disc; }
 ol { list-style: decimal; }
 strong, input, button, .button { font-weight: bold; }
 nav ul { list-style: none; }
-em { font-style: italic; } 
-a { color: #EA8E00; text-decoration: none; 
+em { font-style: italic; }
+a { color: #EA8E00; text-decoration: none;
 -webkit-transition: all .2s ease; -moz-transition: all .2s ease; -ms-transition: all .2s ease; -o-transition: all .2s ease; transition: all .2s ease; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-decoration: none; }
-a:hover { text-decoration: none; color: #222;  } 
-img { border: 0; margin-top: 5px; margin-bottom: 2em; max-width: 100%; height: auto; }
+a:hover { text-decoration: none; color: #222;  }
+img { border: 0; margin-top: 5px; /*margin-bottom: 2em;*/ max-width: 100%; height: auto; }
 p img, h2 img { vertical-align: middle; }
 ul ul, ol ol { padding-bottom: 0; }
 ul.aligncenter, .aligncenter ul, ol.aligncenter, .aligncenter ol { list-style-position: inside; padding-left: 0; }
@@ -112,8 +112,8 @@ ul.ticks li::before { content: '✔';}
 
 
 .icons-showoff::after { content: ""; display: block; clear: both; }
-.icons-showoff p { display: inline-block; text-align: center; width: 100px; font-size: .8em; } 
-.icons-showoff i { font-size: 2em; display: block; } 
+.icons-showoff p { display: inline-block; text-align: center; width: 100px; font-size: .8em; }
+.icons-showoff i { font-size: 2em; display: block; }
 
 
 /* FOOTER
@@ -142,7 +142,7 @@ ul.soc-icons li { display: inline-block; padding: 0 0 0 1em; font-size: 1.5em; }
 ul.soc-icons li a { text-decoration: none !important;}
 ul.soc-icons li a:hover i { color: #000;
 	-moz-animation: spinHorizontal .5s linear;
-    -o-animation: spinHorizontal .5s linear;    
+    -o-animation: spinHorizontal .5s linear;
     -webkit-animation: spinHorizontal .5s linear;
     animation: spinHorizontal .5s linear; }
 @-webkit-keyframes spinHorizontal { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(-360deg); } }

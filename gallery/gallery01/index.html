@@ -4,17 +4,30 @@ title: "album"
 description: "masonry"
 active: gallery
 header-img: "img/gallery-bg.jpg"
-album-title: "my 1st album"
+album-title: "Babini immobiliare"
 images:
- - image_path: /gallery/archive/g01/bg1.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
- - image_path: /gallery/archive/g01/bg2.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
- - image_path: /gallery/archive/g01/bg3.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
+ - image_path: https://res.cloudinary.com/tecniart/image/upload/v1608679547/Babini/babini1_vfyyde.jpg
+   caption: Babini foto 1
+   copyright: © Tecniart
+ - image_path: https://res.cloudinary.com/tecniart/image/upload/v1608679547/Babini/babini2_v6xy06.jpg
+   caption: Babini foto 2
+   copyright: © Tecniart
+ - image_path: https://res.cloudinary.com/tecniart/image/upload/v1608679548/Babini/babini3_om7pnj.jpg
+   caption: Babini foto 3
+   copyright: © Tecniart
+   - image_path: https://res.cloudinary.com/tecniart/image/upload/v1608679548/Babini/babini4_eviqmf.jpg
+     caption: Babini foto 4
+     copyright: © Tecniart
+   - image_path: https://res.cloudinary.com/tecniart/image/upload/v1608679548/Babini/babini5_iunzsj.jpg
+     caption: Babini foto 5
+     copyright: © Tecniart
+   - image_path: https://res.cloudinary.com/tecniart/image/upload/v1608679548/Babini/babini6_ndefmv.jpg
+     caption: Babini foto 6
+     copyright: © Tecniart
+
+
+
+
 ---
 
 <html class="no-js" lang="en">
@@ -23,7 +36,7 @@ images:
 </head>
 
     <body>
- 
+
 	<section id="content" role="main">
 		<div class="wrapper">
 	<br><br>
@@ -32,16 +45,16 @@ images:
 
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
-		
-{% for image in page.images %}  		
+
+{% for image in page.images %}
 
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-						
-					</header>	
+<a href="{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ image.image_path }}"></a>
+
+					</header>
 					<figcaption class='gallery-caption'>
 						<div class="entry-summary" id="{{ image.caption }}">
 							<h3>{{image.caption}}</h3>
@@ -49,7 +62,7 @@ images:
 						</div>
 					</figcaption>
 				</figure>
-				
+
 {% endfor %}
 
 			</div>
@@ -57,7 +70,7 @@ images:
 		</div><!-- END .wrapper -->
 	</section>
 
-<!-- jQuery -->    
+<!-- jQuery -->
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
@@ -84,7 +97,7 @@ image: {
 
 <script src="{{ site.baseurl }}/js/retina.min.js"></script>
 <!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
 <!-- include carousel plugins -->
@@ -96,5 +109,5 @@ image: {
 <!-- Modernizr -->
  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
-    
+
 </body></html>

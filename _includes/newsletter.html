@@ -3,6 +3,28 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
       <center><h3><p>Mandaci un messaggio</h3></center>
+
+
+        <form id="pizzaOrder" name="contattaci" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                <div class="form-group">
+                  <label for="name">Nome:</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">La tua e-mail:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Messaggio:</label>
+                  <textarea class="form-control" rows="7" id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
+                <button type="submit" class="btn btn-primary" style="border-radius: 4px;">Invia</button>
+              </form>
+            </div>
+        </div>
         <script type="text/javascript">
         document.querySelector("form").addEventListener("submit", handleSubmit);
 
@@ -18,28 +40,6 @@
             alert(error))
         }
         </script>
-
-        <form id="pizzaOrder" name="contattaci" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-                <div class="form-group2">
-                  <label for="name">Nome:</label>
-                  <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="form-group2">
-                  <label for="email">La tua e-mail:</label>
-                  <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="form-group2">
-                  <label for="message">Messaggio:</label>
-                  <textarea class="form-control" rows="7" id="message" name="message" required></textarea>
-                </div>
-                <div class="form-group2">
-                  <div data-netlify-recaptcha="true"></div>
-                </div>
-                <button type="submit" class="btn btn-primary" style="border-radius: 4px;">Invia</button>
-              </form>
-            </div>
-        </div>
-
 <style type="text/css">
         .tlemail::-webkit-input-placeholder {
    color: rgba(255,255,255,.45);

@@ -29,26 +29,26 @@
     <!-- /.container -->
 </nav>
 <style media="screen">
-  .left a {
-    text-decoration: none;
+.navbar-custom .nav li a {
+    text-decoration: none !important;
     font-size: 1em;
     position: relative;
-    transition: all 0.6s;
+    transition: all 0.6s !important;
     &:before {
-        content: "";
-        width: 0;
-        height: 0.1em;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background: $color;
-        transition: all 0.3s;
+        content: "" !important;
+        width: 0 !important;
+        height: 0.1em !important;
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        background: white !important;
+        transition: all 0.3s !important;
     }
     &:hover {
         &:before {
-            width: 100%;
-            left: 0;
-            background: $color2;
+            width: 100% !important;
+            left: 0 !important;
+            background: white !important;
         }
     }
 }
